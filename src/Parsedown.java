@@ -3,6 +3,13 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
 
+/*
+ * The edge cases that are currently being handled 
+ * 1) Handling Images: It checks for the presence of ! before the opening bracket, indicating an image link. The code skips such cases.
+ * 2) Correctly Skips Invalid Patterns: If there is an incomplete link (missing closing bracket or opening parenthesis), the code skips the incomplete pattern and continues searching for the next link.
+ * 3) Handles Files with No Links: If the Markdown content doesn't contain any links, the code won't encounter any issues and will return an empty list.
+ */
+
 public class Parsedown {
     public static ArrayList<String> getLinks(String markdown) {
         ArrayList<String> toReturn = new ArrayList<>();
