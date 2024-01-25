@@ -1,0 +1,24 @@
+
+# Parsedown
+
+**A simple java parser that takes out link from markdown.**
+
+## Usage
+
+```java
+java Parsedown file.md
+```
+
+> Where file.md is the file you are trying to parse.
+
+**For fun**
+
+You can even pass this very file to see it extract the License's link.
+
+## Test
+
+### Just run the run.bat file.
+
+## License
+
+[License](https://github.com/AvaterClasher/Parsedown/blob/master/LICENSE)
